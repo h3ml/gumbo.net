@@ -14,16 +14,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Collections.Immutable" Version="1.5.0" />
+    <None Remove="x64\gumbo.dll" />
+    <None Remove="x86\gumbo.dll" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="x64\gumbo.dll">
+    <Content Include="x64\gumbo.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="x86\gumbo.dll">
+    </Content>
+    <Content Include="x86\gumbo.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Collections.Immutable" Version="1.5.0" />
   </ItemGroup>
 
 </Project>

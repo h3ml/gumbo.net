@@ -99,7 +99,6 @@ newaction
         files_to_delete = 
         {
             "*.make",
-            "*.txt",
             "*.zip",
             "*.tar.gz",
             "*.db",
