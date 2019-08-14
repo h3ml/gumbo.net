@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gumbo.DefGen", "Gumbo.DefGen\Gumbo.DefGen.csproj", "{C59F1803-844F-4849-84B2-6E2C0746269C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gumbo.Net", "Gumbo.Net\Gumbo.Net.csproj", "{1876C04C-5321-4262-B34F-B782CB2A4CF4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gumbo.Tests", "Gumbo.Tests\Gumbo.Tests.csproj", "{482B8B99-A7E5-40C2-BAA6-F5FA2F5204EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C59F1803-844F-4849-84B2-6E2C0746269C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C59F1803-844F-4849-84B2-6E2C0746269C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C59F1803-844F-4849-84B2-6E2C0746269C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C59F1803-844F-4849-84B2-6E2C0746269C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1876C04C-5321-4262-B34F-B782CB2A4CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1876C04C-5321-4262-B34F-B782CB2A4CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1876C04C-5321-4262-B34F-B782CB2A4CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1876C04C-5321-4262-B34F-B782CB2A4CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{482B8B99-A7E5-40C2-BAA6-F5FA2F5204EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{482B8B99-A7E5-40C2-BAA6-F5FA2F5204EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{482B8B99-A7E5-40C2-BAA6-F5FA2F5204EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{482B8B99-A7E5-40C2-BAA6-F5FA2F5204EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A394811D-DB6E-4E59-8209-50AC7E9B8BE5}
+	EndGlobalSection
+EndGlobal
