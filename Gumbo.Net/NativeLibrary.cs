@@ -6,6 +6,8 @@ namespace Gumbo
 {
     public static class NativeLibrary
     {
+        public static string LibraryOverride { get; set; }
+
         public static INativeLibrary Create(string name)
         {
 #if CORECLR
@@ -30,7 +32,7 @@ namespace Gumbo
 
         public WindowsNativeLibrary(string name)
         {
-            var library = IntPtr.Size == 8 ? $"x64\\{name}" : $"x86\\{name}";
+            var library = NativeLibrary.LibraryOverride ?? (IntPtr.Size == 8 ? $"x64\\{name}" : $"x86\\{name}");
             _LibarayHandle = LoadLibrary(library);
             if (_LibarayHandle == IntPtr.Zero)
                 throw new InvalidOperationException($"library {name} not found");
@@ -67,7 +69,7 @@ namespace Gumbo
 
         public LinuxNativeLibrary(string name)
         {
-            var library = IntPtr.Size == 8 ? $"x64\\{name}" : $"x86\\{name}";
+            var library = NativeLibrary.LibraryOverride ?? (IntPtr.Size == 8 ? $"x64\\{name}" : $"x86\\{name}");
             _LibarayHandle = dlopen(library, RTLD_NOW);
             if (_LibarayHandle == IntPtr.Zero)
                 throw new InvalidOperationException($"library {name} not found");
